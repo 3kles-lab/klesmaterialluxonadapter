@@ -11,7 +11,8 @@ import { TranslateLoader, TranslateModule, TranslateService } from '@ngx-transla
 import localeFr from '@angular/common/locales/fr';
 import { CommonModule, registerLocaleData } from '@angular/common';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
-import { MatMomentDateModule } from '@angular/material-luxon-adapter';
+import { MatLuxonDateModule } from '@angular/material-luxon-adapter';
+import { KlesMatLuxonModule } from 'kles-material-luxon-adapter';
 registerLocaleData(localeFr);
 
 @NgModule({
@@ -23,7 +24,8 @@ registerLocaleData(localeFr);
     BrowserModule,
     AppRoutingModule,
     MaterialModule,
-    MatMomentDateModule,
+    MatLuxonDateModule,
+    KlesMatLuxonModule,
     BrowserAnimationsModule,
     HttpClientModule,
     FormsModule,

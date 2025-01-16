@@ -1,6 +1,6 @@
 {
   "name": "@3kles/kles-material-luxon-adapter",
-  "version": "14.0.0",
+  "version": "14.0.1",
   "scripts": {
     "build:lib": "ng build kles-material-luxon-adapter --configuration production",
     "publish:lib": "cd dist/kles-material-luxon-adapter && npm publish --registry 'http://192.168.111.61:8081/repository/npm-3kles/'  --force",
@@ -13,6 +13,7 @@
   },
   "private": true,
   "dependencies": {
+    "@3kles/kles-material-datepicker": "^14.0.5",
     "@angular/animations": "^14.1.0",
     "@angular/cdk": "^14.1.0",
     "@angular/common": "^14.1.0",

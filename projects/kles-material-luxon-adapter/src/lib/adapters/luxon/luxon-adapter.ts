@@ -6,7 +6,7 @@ import {
     DateTimeOptions as LuxonDateTimeOptions,
     CalendarSystem as LuxonCalendarSystem,
 } from 'luxon';
-import { KlesMatDateAdapter } from '../date-adapter';
+import { KlesMatDateAdapter } from '@3kles/kles-material-datepicker';
 
 /** Configurable options for the `LuxonDateAdapter`. */
 export interface MatLuxonDateAdapterOptions {

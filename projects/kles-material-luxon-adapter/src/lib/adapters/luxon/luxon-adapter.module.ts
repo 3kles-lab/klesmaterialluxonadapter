@@ -1,6 +1,6 @@
 import { MAT_DATE_FORMATS, MAT_DATE_LOCALE } from "@angular/material/core";
 import { KLES_MAT_LUXON_FORMATS } from "./luxon-format";
-import { KlesMatDateAdapter } from "../date-adapter";
+import { KlesMatDateAdapter } from "@3kles/kles-material-datepicker";
 import { MAT_LUXON_DATE_ADAPTER_OPTIONS } from "@angular/material-luxon-adapter";
 import { NgModule } from "@angular/core";
 import { KlesMatLuxonAdapter } from "./luxon-adapter";

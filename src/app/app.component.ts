@@ -1,5 +1,6 @@
+import { KlesMatDateAdapter } from '@3kles/kles-material-datepicker';
 import { Component, ViewEncapsulation } from '@angular/core';
-import { FormGroup, FormControl } from '@angular/forms';
+import { DateAdapter } from '@angular/material/core';
 
 @Component({
   selector: 'app-root',
@@ -9,5 +10,9 @@ import { FormGroup, FormControl } from '@angular/forms';
   providers: [],
 })
 export class AppComponent {
+  constructor(private dateAdapter: DateAdapter<any>, private klesDateAdapter: KlesMatDateAdapter<any>) { 
+    console.log(this.dateAdapter);
 
+    console.log(this.klesDateAdapter);
+  }
 }
