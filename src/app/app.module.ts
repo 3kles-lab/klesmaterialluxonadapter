@@ -6,7 +6,7 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { AppComponent } from './app.component';
 import { MaterialModule } from './modules/material.module';
 import { TranslateHttpLoader } from '@ngx-translate/http-loader';
-import { HttpClient, HttpClientModule } from '@angular/common/http';
+import { HttpClient, provideHttpClient, withInterceptorsFromDi } from '@angular/common/http';
 import { TranslateLoader, TranslateModule, TranslateService } from '@ngx-translate/core';
 import localeFr from '@angular/common/locales/fr';
 import { CommonModule, registerLocaleData } from '@angular/common';
@@ -15,35 +15,26 @@ import { MatLuxonDateModule } from '@angular/material-luxon-adapter';
 import { KlesMatLuxonModule } from 'kles-material-luxon-adapter';
 registerLocaleData(localeFr);
 
-@NgModule({
-  declarations: [
-    AppComponent,
-  ],
-  imports: [
-    CommonModule,
-    BrowserModule,
-    AppRoutingModule,
-    MaterialModule,
-    MatLuxonDateModule,
-    KlesMatLuxonModule,
-    BrowserAnimationsModule,
-    HttpClientModule,
-    FormsModule,
-    ReactiveFormsModule,
-    TranslateModule.forRoot(
-      {
-        loader: {
-          provide: TranslateLoader,
-          useFactory: (HttpLoaderFactory),
-          deps: [HttpClient]
-        }
-      }
-    )
-  ],
-  exports: [],
-  providers: [TranslateService, { provide: LOCALE_ID, useValue: 'fr-FR' }],
-  bootstrap: [AppComponent]
-})
+@NgModule({ declarations: [
+        AppComponent,
+    ],
+    exports: [],
+    bootstrap: [AppComponent], imports: [CommonModule,
+        BrowserModule,
+        AppRoutingModule,
+        MaterialModule,
+        MatLuxonDateModule,
+        KlesMatLuxonModule,
+        BrowserAnimationsModule,
+        FormsModule,
+        ReactiveFormsModule,
+        TranslateModule.forRoot({
+            loader: {
+                provide: TranslateLoader,
+                useFactory: (HttpLoaderFactory),
+                deps: [HttpClient]
+            }
+        })], providers: [TranslateService, { provide: LOCALE_ID, useValue: 'fr-FR' }, provideHttpClient(withInterceptorsFromDi())] })
 export class AppModule {
 
 }
