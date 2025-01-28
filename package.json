@@ -1,6 +1,6 @@
 {
   "name": "@3kles/kles-material-luxon-adapter",
-  "version": "14.0.1",
+  "version": "15.0.0",
   "scripts": {
     "build:lib": "ng build kles-material-luxon-adapter --configuration production",
     "publish:lib": "cd dist/kles-material-luxon-adapter && npm publish --registry 'http://192.168.111.61:8081/repository/npm-3kles/'  --force",
@@ -15,14 +15,14 @@
   "dependencies": {
     "@3kles/kles-material-datepicker": "^14.0.5",
     "@angular/animations": "^15.2.10",
-    "@angular/cdk": "^14.1.0",
+    "@angular/cdk": "^15.2.9",
     "@angular/common": "^15.2.10",
     "@angular/compiler": "^15.2.10",
     "@angular/core": "^15.2.10",
     "@angular/forms": "^15.2.10",
     "@angular/localize": "^15.2.10",
-    "@angular/material": "^14.1.0",
-    "@angular/material-luxon-adapter": "^14.1.0",
+    "@angular/material": "^15.2.9",
+    "@angular/material-luxon-adapter": "^15.2.9",
     "@angular/platform-browser": "^15.2.10",
     "@angular/platform-browser-dynamic": "^15.2.10",
     "@angular/router": "^15.2.10",
