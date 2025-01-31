@@ -1,15 +1,15 @@
 import { MatDateFormats } from '@angular/material/core';
 
-const DEFAULT = 'l, LTS';
+const DEFAULT = 'D, HH:mm';
 
 export const KLES_MAT_LUXON_FORMATS: MatDateFormats = {
     parse: {
-        dateInput: DEFAULT,
+        dateInput: DEFAULT
     },
     display: {
         dateInput: DEFAULT,
-        monthYearLabel: 'MMM YYYY',
+        monthYearLabel: 'LLL yyyy',
         dateA11yLabel: 'LL',
-        monthYearA11yLabel: 'MMMM YYYY',
-    },
+        monthYearA11yLabel: 'LLLL yyyy'
+    }
 };

@@ -1,18 +1,21 @@
-import { KlesMatDateAdapter } from '@3kles/kles-material-datepicker';
 import { Component, ViewEncapsulation } from '@angular/core';
-import { DateAdapter } from '@angular/material/core';
+import { FormControl, FormGroup } from '@angular/forms';
 
 @Component({
-  selector: 'app-root',
-  templateUrl: './app.component.html',
-  styleUrls: ['./app.component.scss'],
-  encapsulation: ViewEncapsulation.None,
-  providers: [],
+    selector: 'app-root',
+    templateUrl: './app.component.html',
+    styleUrls: ['./app.component.scss'],
+    encapsulation: ViewEncapsulation.None,
+    providers: []
 })
 export class AppComponent {
-  constructor(private dateAdapter: DateAdapter<any>, private klesDateAdapter: KlesMatDateAdapter<any>) { 
-    console.log(this.dateAdapter);
+    form: FormGroup;
 
-    console.log(this.klesDateAdapter);
-  }
+    constructor() {
+        this.form = new FormGroup({
+            date: new FormControl()
+        });
+
+        this.form.valueChanges.subscribe((value) => console.log('form value change!', value));
+    }
 }

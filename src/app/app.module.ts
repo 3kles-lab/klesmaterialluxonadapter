@@ -13,13 +13,17 @@ import { CommonModule, registerLocaleData } from '@angular/common';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { MatLuxonDateModule } from '@angular/material-luxon-adapter';
 import { KlesMatLuxonModule } from 'kles-material-luxon-adapter';
+import { KlesMaterialDatepickerModule } from '@3kles/kles-material-datepicker';
 registerLocaleData(localeFr);
 
-@NgModule({ declarations: [
+@NgModule({
+    declarations: [
         AppComponent,
     ],
     exports: [],
-    bootstrap: [AppComponent], imports: [CommonModule,
+    bootstrap: [AppComponent],
+    imports: [
+        CommonModule,
         BrowserModule,
         AppRoutingModule,
         MaterialModule,
@@ -28,17 +32,26 @@ registerLocaleData(localeFr);
         BrowserAnimationsModule,
         FormsModule,
         ReactiveFormsModule,
+        KlesMaterialDatepickerModule,
+        MatLuxonDateModule,
+        KlesMatLuxonModule,
         TranslateModule.forRoot({
             loader: {
                 provide: TranslateLoader,
                 useFactory: (HttpLoaderFactory),
                 deps: [HttpClient]
             }
-        })], providers: [TranslateService, { provide: LOCALE_ID, useValue: 'fr-FR' }, provideHttpClient(withInterceptorsFromDi())] })
+        })
+    ],
+    providers: [
+        TranslateService,
+        { provide: LOCALE_ID, useValue: 'fr-FR' },
+        provideHttpClient(withInterceptorsFromDi())
+    ]
+})
 export class AppModule {
-
 }
 
 export function HttpLoaderFactory(http: HttpClient) {
-  return new TranslateHttpLoader(http, './assets/i18n/', '.json');
+    return new TranslateHttpLoader(http, './assets/i18n/', '.json');
 }
