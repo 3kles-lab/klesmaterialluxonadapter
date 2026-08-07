@@ -8,7 +8,7 @@ branches:
   - name: hotfix/**
     prerelease: true
   - name: "release/19.x"
-    range: "18.x"
+    range: "19.x"
     prerelease: false
   - name: "release/18.x"
     range: "18.x"
