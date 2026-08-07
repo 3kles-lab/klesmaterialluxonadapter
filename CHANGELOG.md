@@ -1,3 +1,15 @@
+# [21.0.0](http://gitlab.3kles.local/3kles/lib/angular/material/klesmaterialadapter/klesmaterialluxonadapter/compare/v20.0.0...v21.0.0) (2026-08-07)
+
+
+* feat!: Update to Angular 21 ([1611bab](http://gitlab.3kles.local/3kles/lib/angular/material/klesmaterialadapter/klesmaterialluxonadapter/commit/1611bab91562c8d659ba382f7cd1e600e6464625))
+* feat!: Update to Angular 21 ([ea63907](http://gitlab.3kles.local/3kles/lib/angular/material/klesmaterialadapter/klesmaterialluxonadapter/commit/ea63907bc2ef21dda3a03b5059aba19dfe24a156))
+
+
+### BREAKING CHANGES
+
+* Angular 21 is now required.
+* Angular 21 is now required.
+
 # [20.0.0](http://gitlab.3kles.local/3kles/lib/angular/material/klesmaterialadapter/klesmaterialluxonadapter/compare/v19.0.0...v20.0.0) (2026-08-07)
 
 
