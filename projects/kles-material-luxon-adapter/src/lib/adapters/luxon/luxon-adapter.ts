@@ -128,7 +128,7 @@ export class KlesMatLuxonAdapter extends KlesMatDateAdapter<LuxonDateTime> {
     }
 
     getNumDaysInMonth(date: LuxonDateTime): number {
-        return date.daysInMonth;
+        return date.daysInMonth || 0;
     }
 
     clone(date: LuxonDateTime): LuxonDateTime {
@@ -224,7 +224,7 @@ export class KlesMatLuxonAdapter extends KlesMatDateAdapter<LuxonDateTime> {
     }
 
     toIso8601(date: LuxonDateTime): string {
-        return date.toISO();
+        return date.toISO() || '';
     }
 
     /**
@@ -272,7 +272,7 @@ export class KlesMatLuxonAdapter extends KlesMatDateAdapter<LuxonDateTime> {
         return date.second;
     }
     setHour(date: LuxonDateTime, value: number): LuxonDateTime {
-        return this.clone(date).set({ hours: value });
+        return this.clone(date).set({ hour: value });
     }
     setMinute(date: LuxonDateTime, value: number): LuxonDateTime {
         return this.clone(date).set({ minute: value });
