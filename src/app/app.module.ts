@@ -6,7 +6,7 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { AppComponent } from './app.component';
 import { MaterialModule } from './modules/material.module';
 import { TranslateHttpLoader } from '@ngx-translate/http-loader';
-import { HttpClient, provideHttpClient, withInterceptorsFromDi } from '@angular/common/http';
+import { HttpClient, provideHttpClient, withInterceptorsFromDi, withXhr } from '@angular/common/http';
 import { TranslateLoader, TranslateModule, TranslateService } from '@ngx-translate/core';
 import localeFr from '@angular/common/locales/fr';
 import { CommonModule, registerLocaleData } from '@angular/common';
@@ -46,7 +46,7 @@ registerLocaleData(localeFr);
     providers: [
         TranslateService,
         { provide: LOCALE_ID, useValue: 'fr-FR' },
-        provideHttpClient(withInterceptorsFromDi())
+        provideHttpClient(withXhr(), withInterceptorsFromDi())
     ]
 })
 export class AppModule {

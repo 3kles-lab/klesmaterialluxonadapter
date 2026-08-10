@@ -1,4 +1,4 @@
-import { Component, ViewEncapsulation } from '@angular/core';
+import { Component, ViewEncapsulation, ChangeDetectionStrategy } from '@angular/core';
 import { FormControl, FormGroup } from '@angular/forms';
 
 @Component({
@@ -7,6 +7,7 @@ import { FormControl, FormGroup } from '@angular/forms';
     styleUrls: ['./app.component.scss'],
     encapsulation: ViewEncapsulation.None,
     providers: [],
+    changeDetection: ChangeDetectionStrategy.Eager,
     standalone: false
 })
 export class AppComponent {
