@@ -1,6 +1,6 @@
 {
   "name": "@3kles/kles-material-luxon-adapter",
-  "version": "21.0.0",
+  "version": "22.0.0",
   "peerDependencies": {
     "@angular/animations": "^22.1.1",
     "@angular/cdk": "^22.1.1",
