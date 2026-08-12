@@ -1,3 +1,12 @@
+## [20.0.1](http://gitlab.3kles.local/3kles/lib/angular/material/klesmaterialadapter/klesmaterialluxonadapter/compare/v20.0.0...v20.0.1) (2026-08-12)
+
+
+### Bug Fixes
+
+* Remove module ([6adcde2](http://gitlab.3kles.local/3kles/lib/angular/material/klesmaterialadapter/klesmaterialluxonadapter/commit/6adcde2f8ec8092a2251d18e9e2d42dee0b7b6ac))
+* Set hour ([41e7171](http://gitlab.3kles.local/3kles/lib/angular/material/klesmaterialadapter/klesmaterialluxonadapter/commit/41e71710e4975c0dc926455c420d8e1f1f3bfecf))
+* Update library dependencies ([df7f1f6](http://gitlab.3kles.local/3kles/lib/angular/material/klesmaterialadapter/klesmaterialluxonadapter/commit/df7f1f6aa1dc9c9d721feea4d16f87629f401649))
+
 # [20.0.0](http://gitlab.3kles.local/3kles/lib/angular/material/klesmaterialadapter/klesmaterialluxonadapter/compare/v19.0.0...v20.0.0) (2026-08-07)
 
 
