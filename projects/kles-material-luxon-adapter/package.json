@@ -2,25 +2,14 @@
   "name": "@3kles/kles-material-luxon-adapter",
   "version": "21.0.0",
   "peerDependencies": {
-    "@angular/animations": "^21.2.19",
-    "@angular/cdk": "^21.2.14",
     "@angular/common": "^21.2.19",
-    "@angular/compiler": "^21.2.19",
     "@angular/core": "^21.2.19",
     "@angular/forms": "^21.2.19",
     "@angular/material": "^21.2.14",
     "@angular/material-luxon-adapter": "^21.2.14",
-    "@angular/platform-browser": "^21.2.19",
-    "@angular/platform-browser-dynamic": "^21.2.19",
-    "@angular/router": "^21.2.19",
-    "@ngx-translate/core": "^15.0.0",
-    "@ngx-translate/http-loader": "^8.0.0",
-    "hammerjs": "^2.0.8",
-    "jquery": "^3.5.1",
-    "rxjs": "~6.5.4",
-    "zone.js": "~0.14.2"
+    "luxon": "^3.7.2"
   },
   "dependencies": {
-    "tslib": "^2.0.0"
+    "tslib": "^2.3.0"
   }
 }
