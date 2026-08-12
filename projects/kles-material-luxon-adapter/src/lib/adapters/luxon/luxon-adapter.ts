@@ -262,24 +262,26 @@ export class KlesMatLuxonAdapter extends KlesMatDateAdapter<LuxonDateTime> {
         return LuxonDateTime.invalid('Invalid Luxon DateTime object.');
     }
 
-    getHour(date: LuxonDateTime): number {
+    getHours(date: LuxonDateTime): number {
         return date.hour;
     }
-    getMinute(date: LuxonDateTime): number {
+
+    getMinutes(date: LuxonDateTime): number {
         return date.minute;
     }
-    getSecond(date: LuxonDateTime): number {
+
+    getSeconds(date: LuxonDateTime): number {
         return date.second;
     }
-    setHour(date: LuxonDateTime, value: number): LuxonDateTime {
-        return this.clone(date).set({ hour: value });
+
+    setTime(target: LuxonDateTime, hours: number, minutes: number, seconds: number): LuxonDateTime {
+        return this.clone(target).set({
+            hour: hours,
+            minute: minutes,
+            second: seconds
+        });
     }
-    setMinute(date: LuxonDateTime, value: number): LuxonDateTime {
-        return this.clone(date).set({ minute: value });
-    }
-    setSecond(date: LuxonDateTime, value: number): LuxonDateTime {
-        return this.clone(date).set({ second: value });
-    }
+
     getDay(date: LuxonDateTime): string {
         return this.format(date, 'cccc');
     }
