@@ -1,3 +1,10 @@
+# [20.1.0](http://gitlab.3kles.local/3kles/lib/angular/material/klesmaterialadapter/klesmaterialluxonadapter/compare/v20.0.1...v20.1.0) (2026-08-12)
+
+
+### Features
+
+* KlesMatDateAdapter implementations ([3bf148e](http://gitlab.3kles.local/3kles/lib/angular/material/klesmaterialadapter/klesmaterialluxonadapter/commit/3bf148e0694ece03694f18cdb565862431d9c71c))
+
 ## [20.0.1](http://gitlab.3kles.local/3kles/lib/angular/material/klesmaterialadapter/klesmaterialluxonadapter/compare/v20.0.0...v20.0.1) (2026-08-12)
 
 
