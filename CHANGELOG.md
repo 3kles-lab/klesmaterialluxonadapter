@@ -1,3 +1,10 @@
+## [22.1.1](http://gitlab.3kles.local/3kles/lib/angular/material/klesmaterialadapter/klesmaterialluxonadapter/compare/v22.1.0...v22.1.1) (2026-08-12)
+
+
+### Bug Fixes
+
+* Luxon dependencies ([bf5c368](http://gitlab.3kles.local/3kles/lib/angular/material/klesmaterialadapter/klesmaterialluxonadapter/commit/bf5c368a06d44763d5b41d180d10be250fd8b5e3))
+
 # [22.1.0](http://gitlab.3kles.local/3kles/lib/angular/material/klesmaterialadapter/klesmaterialluxonadapter/compare/v22.0.1...v22.1.0) (2026-08-12)
 
 
