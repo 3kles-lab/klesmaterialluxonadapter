@@ -272,7 +272,7 @@ export class KlesMatLuxonAdapter extends KlesMatDateAdapter<LuxonDateTime> {
         return date.second;
     }
     setHour(date: LuxonDateTime, value: number): LuxonDateTime {
-        return this.clone(date).set({ hours: value });
+        return this.clone(date).set({ hour: value });
     }
     setMinute(date: LuxonDateTime, value: number): LuxonDateTime {
         return this.clone(date).set({ minute: value });
