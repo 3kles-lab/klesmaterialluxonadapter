@@ -1,3 +1,16 @@
+# [21.1.0](http://gitlab.3kles.local/3kles/lib/angular/material/klesmaterialadapter/klesmaterialluxonadapter/compare/v21.0.0...v21.1.0) (2026-08-12)
+
+
+### Bug Fixes
+
+* Remove module ([f32ba22](http://gitlab.3kles.local/3kles/lib/angular/material/klesmaterialadapter/klesmaterialluxonadapter/commit/f32ba2259f6587616ac06903ea3546e9a57e90b4))
+* Update library dependencies ([7a3a376](http://gitlab.3kles.local/3kles/lib/angular/material/klesmaterialadapter/klesmaterialluxonadapter/commit/7a3a376e83a051a3dff96c2a13e7a0c89e3af25d))
+
+
+### Features
+
+* KlesMatDateAdapter implementations ([be4fe60](http://gitlab.3kles.local/3kles/lib/angular/material/klesmaterialadapter/klesmaterialluxonadapter/commit/be4fe60eaa7b90f0e351bc41fe231488db47d0ef))
+
 # [21.0.0](http://gitlab.3kles.local/3kles/lib/angular/material/klesmaterialadapter/klesmaterialluxonadapter/compare/v20.0.0...v21.0.0) (2026-08-07)
 
 
